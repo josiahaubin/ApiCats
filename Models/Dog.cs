@@ -10,6 +10,13 @@ namespace cats.Models
       this.Id = String.Join("", Guid.NewGuid().ToString().Split('-'));
     }
 
+    public Dog(string name, string color)
+    {
+      Name = name;
+      Color = color;
+      this.Id = String.Join("", Guid.NewGuid().ToString().Split('-'));
+    }
+
     [Required]
     public string Name { get; set; }
     [Required]
